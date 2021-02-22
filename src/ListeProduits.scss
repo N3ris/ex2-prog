@@ -1,17 +1,27 @@
 .ListeDossiers{
   margin: 20px 65px 15px 65px;
+  display: grid;
+  grid-template-columns: auto auto auto auto ;
   h2 {
     margin-bottom: 20px;
     padding-bottom: 10px;
 
   }
-  li {
+  li   {
     list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
     margin: 0;
     padding: 0;
   }
+}
+
+@media screen and (max-width: 1200px) {
+
+  .ListeDossiers{
+    grid-template-columns: auto auto ;}
+}
+
+@media screen and (max-width: 650px) {
+
+  .ListeDossiers{
+    grid-template-columns: auto ;}
 }
